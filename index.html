@@ -1,108 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login Page - TicketHub</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
 
+        /* General Page Style */
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
+
+            background:
+                radial-gradient(
+                    circle at 85% 40%,
+                    #5140d9 0%,
+                    transparent 45%
+                ),
+                linear-gradient(
+                    120deg,
+                    #111b38,
+                    #252b70,
+                    #30208a
+                );
+
+            min-height: 100vh;
 
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
         }
 
-        .login-box {
-            background-color: white;
+        /* Login Container */
+        .login-container {
+            background: rgba(255, 255, 255, 0.96);
+
             width: 350px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            max-width: calc(100% - 60px);
+            padding: 35px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
+        /* Login Title */
         h2 {
             text-align: center;
-            margin-bottom: 25px;
-            color: #333;
+            color: #171b3d;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
         }
 
+        /* Labels */
         label {
             display: block;
-            margin-bottom: 8px;
-            color: #333;
+            margin-bottom: 10px;
+            color: #252b50;
+            font-weight: bold;
+            font-size: 15px;
         }
 
+        /* Input Fields */
         input {
             width: 100%;
             padding: 12px;
-            margin-bottom: 18px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
+            margin-bottom: 20px;
+
+            border: 1px solid #ddd;
+            border-radius: 7px;
+
+            box-sizing: border-box;
+            font-size: 14px;
+
+            background: #ffffff;
         }
 
+        /* Input Focus */
+        input:focus {
+            outline: none;
+            border-color: #5140d9;
+
+            box-shadow: 0 0 5px rgba(81, 64, 217, 0.3);
+        }
+
+        /* Login Button */
         button {
             width: 100%;
-            padding: 12px;
-            background-color: #00aeff;
+            padding: 13px;
+
+            background: linear-gradient(
+                90deg,
+                #314acb,
+                #5140d9
+            );
+
             color: white;
             border: none;
-            border-radius: 6px;
-            cursor: pointer;
+            border-radius: 7px;
+
             font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: 0.3s;
         }
 
+        /* Button Hover */
         button:hover {
-            background-color: #1a00ff;
+            background: linear-gradient(
+                90deg,
+                #2538a8,
+                #3929b5
+            );
+
+            transform: translateY(-2px);
         }
 
-        p {
+        /* Sign Up Text */
+        .signup-text {
+            color: #252b50;
             text-align: center;
             margin-top: 20px;
+            margin-bottom: 5px;
             font-size: 14px;
         }
 
-          p a {
-            color:#1a00ff;
+        /* Sign Up Link */
+        .signup-text a {
+            color: #314acb;
             text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
         }
 
-        p a:hover{ 
-          color:red;
+        /* Sign Up Hover */
+        .signup-text a:hover {
+            color: #5140d9;
+            text-decoration: underline;
         }
+
     </style>
+
 </head>
 
 <body>
 
-    <div class="login-box">
+    <div class="login-container">
 
         <h2>Login</h2>
 
         <form>
-            <label for="email">Email</label>
-            <input type="email" id="email"  placeholder="Enter your email"  required >
+
+            <label for="username">Username</label>
+
+            <input
+                type="text"
+                id="Username"
+                name="Username"
+                placeholder="Enter your Username"
+                required
+            >
 
             <label for="password">Password</label>
-           <input type="password" id="password" placeholder="Enter your password"  required >
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
 
             <button type="submit">Log In</button>
+
         </form>
 
-         <p>Don't have an account?
-        <a href=""> Sign Up</a>    
+        <p class="signup-text">
+            Don't have an account?
+            <a href="sign up.html">Sign Up</a>
         </p>
+
     </div>
 
 </body>
+
 </html>
