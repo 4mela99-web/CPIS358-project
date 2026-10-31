@@ -825,3 +825,116 @@ body {
         0 12px 35px rgba(0, 0, 0, 0.2),
         0 0 0 3px rgba(165, 180, 252, 0.5);
 }
+.about-hero {
+    background: linear-gradient(
+        120deg,
+        #111a42,
+        #2634a4,
+        #4931c5
+    );
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    color: #d5c9ff;
+}
+.about-mission {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.about-mission h2 {
+    font-size: 35px;
+    color: #172044;
+    margin-bottom: 25px;
+}
+
+.about-mission p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #666;
+}
+.about-services {
+    padding: 80px 8%;
+    background-color: #f8f9fc;
+    text-align: center;
+}
+
+.about-services h2 {
+    font-size: 35px;
+    color: #172044;
+    margin-bottom: 45px;
+}
+
+.about-services-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.about-service-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    border: 1px solid #e8eaf2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.about-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.about-service-card span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-service-card h3 {
+    font-size: 20px;
+    color: #172044;
+    margin-bottom: 15px;
+}
+
+.about-service-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+}
+.about-vision {
+    background: linear-gradient(
+        120deg,
+        #171b85,
+        #4f46e5
+    );
+
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-vision h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-vision p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
