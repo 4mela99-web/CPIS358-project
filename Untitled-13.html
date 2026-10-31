@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketHub | Home</title>
+</head>
+<body>
+<head>
+  <nav class="navbar">
+
+        <h1 class="logo">✦ TicketHub</h1>
+        <dev class="nav-links" id="navLinks">
+            
+            <a href="index.html">Explore Events</a>
+            <a href="#categories">Categories</a>
+            <a href="#compare">Compare Prices</a>
+            <a href="resell.html">Sell Tickets</a>
+            
+        </dev>
+         <div class="nav-buttons">
+            <a href="login.html">Log in</a>
+            <a href="signup.html" class="signup-btn">Sign up</a>
+        </div>
+    </nav>
+</head>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            THE BEST MOMENTS START HERE
+        </p>
+
+        <h1 class="hero-title">
+            Live it.
+            <br>
+            <span>Don't just watch it.</span>
+        </h1>
+
+        <p class="hero-description">
+            Find unforgettable concerts, sports and live events.
+            Discover tickets and compare prices in one place.
+        </p>
+        <form class="search-box" id="searchForm">
+
+    <div class="search-input">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+            type="text"
+            id="eventSearch"
+            placeholder="Search artists, teams, or events"
+        >
+
+    </div>
+
+    <div class="city-select">
+
+        <select id="city">
+            <style>
+                select {
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                }
+            </style>
+
+            <option value="">All cities</option>
+            <option value="Jeddah">Jeddah</option>
+            <option value="Riyadh">Riyadh</option>
+            <option value="Dammam">Dammam</option>
+
+        </select>
+
+    </div>
+
+    <button type="submit" class="search-btn">
+        <style>
+            button {
+                background-color: #314acb;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        </style>
+        Find tickets →
+    </button>
+
+</form>
+<div class="hero-features">
+
+    <span>✦ Easy discovery</span>
+
+    <span>✦ Compare prices</span>
+
+    <span>✦ Explore resale</span>
+
+</div>
+    </div>
+
+</section>
+<section class="categories" id="categories">
+<div class="section-header">
+    <h2>Explore Categories</h2>
+    <p>Find your next unforgettable experience</p>
+</div>
+
+<div class="category-container">
+    <a href="#trending" class="category-card">
+        <span class="category-icon">⚽</span>
+        <h3> Sports</h3>
+        <p> Football, basketball, and more</p>
+    </a>
+
+    <a href="#trending" class="category-card">
+        <span class="category-icon">🎵</span>
+        <h3> Music</h3>
+        <p> Concerts, festivals, and live shows</p>
+    </a>
+
+    <a href="#trending" class="category-card">
+        <span class="category-icon">🎭</span>
+        <h3> Theater</h3>
+        <p> Plays, musicals, and performances</p>
+    </a>
+</div>
+</section>
+
+</div> 
+<!-- Trending Events -->
+<section class="trending" id="trending">
+
+    <div class="section-header">
+        <h2>Trending Events 🔥</h2>
+        <p>Discover the most popular events near you</p>
+    </div>
+
+    <div class="filter-buttons">
+        <button id="allEventsBtn" class="filter-btn">
+            All Events
+        </button>
+    </div>
+
+    <div class="events-container">
+
+        
+        <article class="event-card" data-category="sports">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIIZBckTYPuF6qjPHW4rC4byUcDlAo-KBt4Zq-HDFYp8gP5B-HyD347pF&s=10"
+                 alt="Al-Ittihad vs Al-Ahli">
+
+            <div class="event-info">
+
+                <span class="event-category">SPORTS</span>
+
+                <h3>Al-Ittihad vs Al-Ahli</h3>
+
+                <p>📍 Jeddah, Saudi Arabia</p>
+
+                <p>📅 November 15, 2026</p>
+
+                <div class="event-bottom">
+
+                    <div>
+                        <small>Starting from</small>
+                        <h4>150 SAR</h4>
+                    </div>
+
+                    <a href="details.html" class="event-btn">
+                        View Tickets
+                    </a>
+                   
+                </div>
+
+            </div>
+
+        </article>
+
+        
+        <article class="event-card" data-category="sports">
+
+            <img src="https://assets-sports.asharq.com/images/articles/1200x630/social-image/5cc77c59-af66-480d-a833-ea98ed218c7d.jpg"
+                 alt="Al-Hilal vs Al-Nassr">
+
+            <div class="event-info">
+
+                <span class="event-category">SPORTS</span>
+
+                <h3>Al-Hilal vs Al-Nassr</h3>
+
+                <p>📍 Riyadh, Saudi Arabia</p>
+
+                <p>📅 November 20, 2026</p>
+
+                <div class="event-bottom">
+
+                    <div>
+                        <small>Starting from</small>
+                        <h4>200 SAR</h4>
+                    </div>
+
+                    <a href="details.html" class="event-btn">
+                        View Tickets
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        
+        <article class="event-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDeIA4qFtRuMKf0qanEf-5STaI648zC3Q3JR7-NMQNyAWj68STnN7oXG4a&s=10"
+                    alt="Live Music Concert">
+                <h3>Live Music Concert</h3>
+
+                <p>📍 Jeddah, Saudi Arabia</p>
+
+                <p>📅 December 5, 2026</p>
+
+                <div class="event-bottom">
+
+                    <div>
+                        <small>Starting from</small>
+                        <h4>250 SAR</h4>
+                    </div>
+
+                    <a href="details.html" class="event-btn">
+                        View Tickets
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>  
+<selection class="compare-section" id="compare">
+    <div class="section-header">
+        <h2>Compare Prices</h2>
+        <p>Find the best ticket deals in one place</p>
+    </div>
+</selection>
+<div class="compare-container">
+
+    <div class="compare-filter">
+
+        <label for="compareEvent">
+            Select an Event:
+        </label>
+
+        <select id="compareEvent">
+
+            <option value="football">
+                Al-Ittihad vs Al-Ahli
+            </option>
+
+            <option value="riyadh">
+                Al-Hilal vs Al-Nassr
+            </option>
+
+            <option value="concert">
+                Live Music Concert
+            </option>
+
+        </select>
+
+    </div>
+
+</div>
+<div class="compare-container">
+    <div class="table-wrapper">
+
+    <table class="price-table">
+
+        <thead>
+            <tr>
+                <th>Ticket Platform</th>
+                <th>Ticket Type</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="priceTableBody">
+
+            <tr>
+                <td>TicketHub</td>
+                <td>Standard</td>
+                <td>150 SAR</td>
+                <td>Available</td>
+                <td>
+                    <button class="deal-btn">
+                        View Deal
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Platform A</td>
+                <td>Standard</td>
+                <td>180 SAR</td>
+                <td>Available</td>
+                <td>
+                    <button class="deal-btn">
+                        View Deal
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Platform B</td>
+                <td>Standard</td>
+                <td>165 SAR</td>
+                <td>Available</td>
+                <td>
+                    <button class="deal-btn">
+                        View Deal
+                    </button>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+</div>
+<section class="how-it-works" id="how-it-works">
+    <!-- Why TicketHub Section -->
+<section class="why-section">
+
+    <div class="why-header">
+
+        <p>WHY TICKETHUB?</p>
+
+        <h2>One place. Every experience.</h2>
+
+    </div>
+
+    <div class="why-container">
+
+        <!-- Discover Events -->
+        <div class="why-card">
+
+            <div class="why-icon">⌕</div>
+
+            <h3>Discover events</h3>
+
+            <p>
+                Browse sports, concerts, and entertainment
+                in one easy place.
+            </p>
+
+        </div>
+
+        <!-- Compare Options -->
+        <div class="why-card">
+
+            <div class="why-icon">⇄</div>
+
+            <h3>Compare options</h3>
+
+            <p>
+                Explore sample listings and compare prices
+                before deciding.
+            </p>
+
+        </div>
+
+        <!-- Resell Tickets -->
+        <div class="why-card">
+
+            <div class="why-icon">↗</div>
+
+            <h3>Resell tickets</h3>
+
+            <p>
+                Use our demo resale form to list tickets
+                you no longer need.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<!-- Resell Banner -->
+<section class="resell-banner">
+
+    <div class="resell-banner-text">
+
+        <h2>Have a ticket you can't use?</h2>
+
+        <p>
+            Explore how ticket resale works on TicketHub.
+        </p>
+
+    </div>
+
+    <a href="resell.html" class="resell-banner-btn">
+        Sell your ticket →
+    </a>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo -->
+        <div class="footer-brand">
+
+            <h2>✦ TicketHub</h2>
+
+            <p>
+                Find your next unforgettable experience.
+            </p>
+
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+
+            <a href="index.html">Events</a>
+
+            <a href="#compare">Compare Prices</a>
+
+            <a href="resell.html">Resell</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="login.html">Log in</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 TicketHub. Academic demo project.
+        </p>
+
+        <a href="#">Back to top ↑</a>
+
+    </div>
+
+</footer>
+    
+</body>
+</html>
