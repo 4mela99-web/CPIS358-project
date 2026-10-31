@@ -87,7 +87,12 @@ body {
 }
 .hero-content {
     max-width: 1100px;
+
     margin: auto;
+
+    position: relative;
+
+    z-index: 2;
 }
 .hero-label {
     font-size: 14px;
@@ -132,6 +137,8 @@ body {
     max-width: 950px;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+     z-index: 3;
 }
 .search-input {
     display: flex;
@@ -731,4 +738,90 @@ body {
     font-size: 28px;
     color: #172044;
     cursor: pointer;
+}
+/* Benefits Section */
+
+.benefits-box {
+    max-width: 850px;
+    margin: 60px auto 0;
+
+    padding: 35px;
+
+    background-color: #f8f9ff;
+
+    border: 1px solid #e3e7ff;
+    border-radius: 18px;
+}
+
+.benefits-box h3 {
+    color: #172044;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.benefits-list {
+    padding-left: 25px;
+}
+
+.benefits-list li {
+    color: #555;
+    font-size: 16px;
+
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.benefits-list li::marker {
+    color: #3454e8;
+}
+/* Hero Layering Effect */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    border: 2px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    top: -150px;
+    right: -100px;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 2px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 50%;
+
+    top: -50px;
+    right: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+.hero::before {
+    box-shadow:
+        0 0 0 70px rgba(255, 255, 255, 0.015),
+        0 0 0 140px rgba(255, 255, 255, 0.01);
+}
+.search-box:focus-within {
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.2),
+        0 0 0 3px rgba(165, 180, 252, 0.5);
 }
