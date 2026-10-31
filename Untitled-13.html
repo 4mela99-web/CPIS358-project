@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketHub | Home</title>
 </head>
 <body>
-<head>
-  <nav class="navbar">
+<header>
+    <nav class="navbar">
 
         <h1 class="logo">✦ TicketHub</h1>
-        <dev class="nav-links" id="navLinks">
+     <div class="nav-links" id="navLinks">
             
             <a href="index.html">Explore Events</a>
             <a href="#categories">Categories</a>
             <a href="#compare">Compare Prices</a>
             <a href="resell.html">Sell Tickets</a>
             
-        </dev>
+        </div>
          <div class="nav-buttons">
             <a href="login.html">Log in</a>
             <a href="signup.html" class="signup-btn">Sign up</a>
         </div>
     </nav>
-</head>
+</header>
 <section class="hero">
 
     <div class="hero-content">
@@ -134,7 +134,7 @@
 </div>
 </section>
 
-</div> 
+ 
 <!-- Trending Events -->
 <section class="trending" id="trending">
 
@@ -248,99 +248,104 @@
     </div>
 
 </section>  
-<selection class="compare-section" id="compare">
+
+<!-- Compare Prices Section -->
+
+<section class="compare-section" id="compare">
+
     <div class="section-header">
         <h2>Compare Prices</h2>
         <p>Find the best ticket deals in one place</p>
     </div>
-</selection>
-<div class="compare-container">
 
-    <div class="compare-filter">
+    <div class="compare-container">
 
-        <label for="compareEvent">
-            Select an Event:
-        </label>
+        <div class="compare-filter">
 
-        <select id="compareEvent">
+            <label for="compareEvent">
+                Select an Event:
+            </label>
 
-            <option value="football">
-                Al-Ittihad vs Al-Ahli
-            </option>
+            <select id="compareEvent">
 
-            <option value="riyadh">
-                Al-Hilal vs Al-Nassr
-            </option>
+                <option value="football">
+                    Al-Ittihad vs Al-Ahli
+                </option>
 
-            <option value="concert">
-                Live Music Concert
-            </option>
+                <option value="riyadh">
+                    Al-Hilal vs Al-Nassr
+                </option>
 
-        </select>
+                <option value="concert">
+                    Live Music Concert
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="table-wrapper">
+
+            <table class="price-table">
+
+                <thead>
+                    <tr>
+                        <th>Ticket Platform</th>
+                        <th>Ticket Type</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="priceTableBody">
+
+                    <tr>
+                        <td>TicketHub</td>
+                        <td>Standard</td>
+                        <td>150 SAR</td>
+                        <td>Available</td>
+                        <td>
+                            <button class="deal-btn">
+                                View Deal
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Platform A</td>
+                        <td>Standard</td>
+                        <td>180 SAR</td>
+                        <td>Available</td>
+                        <td>
+                            <button class="deal-btn">
+                                View Deal
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Platform B</td>
+                        <td>Standard</td>
+                        <td>165 SAR</td>
+                        <td>Available</td>
+                        <td>
+                            <button class="deal-btn">
+                                View Deal
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
 
     </div>
 
-</div>
-<div class="compare-container">
-    <div class="table-wrapper">
+</section>
 
-    <table class="price-table">
-
-        <thead>
-            <tr>
-                <th>Ticket Platform</th>
-                <th>Ticket Type</th>
-                <th>Price</th>
-                <th>Availability</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-
-        <tbody id="priceTableBody">
-
-            <tr>
-                <td>TicketHub</td>
-                <td>Standard</td>
-                <td>150 SAR</td>
-                <td>Available</td>
-                <td>
-                    <button class="deal-btn">
-                        View Deal
-                    </button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Platform A</td>
-                <td>Standard</td>
-                <td>180 SAR</td>
-                <td>Available</td>
-                <td>
-                    <button class="deal-btn">
-                        View Deal
-                    </button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Platform B</td>
-                <td>Standard</td>
-                <td>165 SAR</td>
-                <td>Available</td>
-                <td>
-                    <button class="deal-btn">
-                        View Deal
-                    </button>
-                </td>
-            </tr>
-
-        </tbody>
-
-    </table>
-
-</div>
-</div>
-<section class="how-it-works" id="how-it-works">
     <!-- Why TicketHub Section -->
 <section class="why-section">
 
@@ -397,8 +402,27 @@
         </div>
 
     </div>
+<!-- TicketHub Benefits -->
 
-</section>
+<div class="benefits-box">
+
+    <h3>Why Choose TicketHub?</h3>
+
+    <ul class="benefits-list">
+
+        <li>Discover sports, concerts, and entertainment events.</li>
+
+        <li>Compare ticket prices from different platforms.</li>
+
+        <li>Explore ticket resale options.</li>
+
+        <li>Find events based on your interests.</li>
+
+        <li>Enjoy a simple and user-friendly experience.</li>
+
+    </ul>
+
+</div>
 </section>
 <!-- Resell Banner -->
 <section class="resell-banner">
