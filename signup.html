@@ -71,7 +71,7 @@
     <div class="signup-box">
         <h2>Sign Up</h2>
 
-        <form method="post" action="login.html">
+        <form id="signupForm">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="fullname"
                    placeholder="Enter your full name" required>
@@ -100,20 +100,31 @@
         </form>
     </div>
 
-    <script>
-        const password = document.getElementById("password");
-        const confirmPassword = document.getElementById("confirmPassword");
+   <script>
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirmPassword");
+    const signupForm = document.getElementById("signupForm");
 
-        function checkPasswords() {
-            if (password.value !== confirmPassword.value) {
-                confirmPassword.setCustomValidity("Passwords do not match");
-            } else {
-                confirmPassword.setCustomValidity("");
-            }
+    function checkPasswords() {
+        if (password.value !== confirmPassword.value) {
+            confirmPassword.setCustomValidity("Passwords do not match");
+        } else {
+            confirmPassword.setCustomValidity("");
         }
+    }
 
-        password.addEventListener("input", checkPasswords);
-        confirmPassword.addEventListener("input", checkPasswords);
-    </script>
+    password.addEventListener("input", checkPasswords);
+    confirmPassword.addEventListener("input", checkPasswords);
+
+    signupForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        checkPasswords();
+
+        if (signupForm.reportValidity()) {
+            window.location.href = "login.html";
+        }
+    });
+</script>
 </body>
 </html>
